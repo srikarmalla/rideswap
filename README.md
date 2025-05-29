@@ -1,4 +1,5 @@
 # RideSwap - Vehicle Rental Platform
+![RideSwap](rideswap/images/thumbnail.png)
 
 ## 🚗 Project Overview
 
