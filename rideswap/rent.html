@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideSwap - Rent a Vehicle</title>
+    <link rel="stylesheet" href="rent.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="home.html" class="logo">Ride<span>Swap</span></a>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="booking.html">Book</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="page-header">
+        <h1>Premium Vehicle Rentals</h1>
+        <p>Choose from our exclusive collection and drive in style</p>
+    </div>
+    
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Vehicles</h2>
+            <p class="section-subtitle">Explore our most popular choices</p>
+            <div class="vehicle-grid">
+                <div class="vehicle-card" data-vehicle="Bike" data-price="2000" data-type="Saviour">
+                    <div class="vehicle-img" style="background-image: url('images/bike.jpeg');">
+                        <div class="vehicle-type">Saviour</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Bike</h3>
+                        <div class="vehicle-details">
+                            <div>⛽ Fuel</div><div>👥 2 Seats</div>
+                        </div>
+                        <p>Bike for you with affordable price and 100 mile range.</p>
+                        <div class="vehicle-price">₹2000 <span>/ day</span></div>
+                        <button class="button rent-btn">Rent Now</button>
+                    </div>
+                </div>
+                <div class="vehicle-card" data-vehicle="car" data-price="15000" data-type="Car">
+                    <div class="vehicle-img" style="background-image: url('images/ride.jpeg');">
+                        <div class="vehicle-type">SUV</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Ride Sadan</h3>
+                        <div class="vehicle-details">
+                            <div>🪫⛽</div><div>👥 5 Seats</div><div>🚪 4 Doors</div>
+                        </div>
+                        <p>Adventure-ready SUV perfect for off-road exploration and outdoor activities.</p>
+                        <div class="vehicle-price">₹15000 <span>/ day</span></div>
+                        <button class="button rent-btn">Rent Now</button>
+                    </div>
+                </div>
+                <div class="vehicle-card" data-vehicle="Mercedes S-Class" data-price="39000" data-type="Luxury">
+                    <div class="vehicle-img" style="background-image: url('images/Mercedes\ S-Class.jpeg');">
+                        <div class="vehicle-type">Luxury</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Mercedes S-Class</h3>
+                        <div class="vehicle-details">
+                            <div>⛽ Fuel</div><div>👥 5 Seats</div><div>🚪 4 Doors</div>
+                        </div>
+                        <p>Luxury sedan with premium amenities and superior comfort for business travel.</p>
+                        <div class="vehicle-price">₹39000 <span>/ day</span></div>
+                        <button class="button rent-btn">Rent Now</button>
+                    </div>
+                </div>
+                <div class="vehicle-card" data-vehicle="Toyota RAV4 Hybrid" data-price="17500" data-type="Hybrid">
+                    <div class="vehicle-img" style="background-image: url('images/Toyota\ RAV4\ Hybrid.jpeg');">
+                        <div class="vehicle-type">Hybrid</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Toyota RAV4 Hybrid</h3>
+                        <div class="vehicle-details">
+                            <div>⚡⛽ Hybrid</div><div>👥 5 Seats</div><div>🚪 5 Doors</div>
+                        </div>
+                        <p>Eco-friendly SUV with excellent fuel economy and spacious interior for families.</p>
+                        <div class="vehicle-price">₹17500 <span>/ day</span></div>
+                        <button class="button rent-btn">Rent Now</button>
+                    </div>  
+                </div>
+                <div class="vehicle-card" data-vehicle="Jeep Wrangler" data-price="27500" data-type="Power">
+                    <div class="vehicle-img" style="background-image: url('images/Jeep\ Wrangler\ 1.jpeg');">
+                        <div class="vehicle-type">Power</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Jeep Wrangler</h3>
+                        <div class="vehicle-details">
+                            <div>⚡⛽ Hybrid</div><div>👥 5 Seats</div><div>🚪 5 Doors</div>
+                        </div>
+                        <p>Enjoy your Ride with excellent fuel economy and spacious interior for families.</p>
+                        <div class="vehicle-price">₹27500 <span>/ day</span></div>
+                        <button class="button rent-btn">Rent Now</button>
+                    </div>
+                </div>
+                <div class="vehicle-card" data-vehicle="Lamborghini" data-price="95000" data-type="Expensive">
+                    <div class="vehicle-img" style="background-image: url('images/lamborghini.jpeg');">
+                        <div class="vehicle-type">Expensive</div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Lamborghini</h3>
+                        <div class="vehicle-details">
+                            <div>⛽ Fuel</div><div>👥 2 Seats</div><div>🚪 2 Doors</div>
+                        </div>
+                        <p>Enjoy your Ride with Luxury using RideSwap</p>
+                        <div class="vehicle-price">₹97500 <span>/ day</span></div>
+                        <button class="button rent-btn">Rent Now</button>
+                    </div>
+            </div>   
+        </div>
+    </section>
+    
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Your Vehicle</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pickupDate">Pickup Date</label>
+                            <input type="date" id="pickupDate" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="returnDate">Return Date</label>
+                            <input type="date" id="returnDate" class="form-control"  required>
+                        </div>
+                    </div>
+                    
+                    <h3 class="form-title">Personal Information</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Full Address</label>
+                        <textarea id="address" class="form-control" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="idType">ID Type</label>
+                            <select id="idType" class="form-control" required>
+                                <option value="">Select ID Type</option>
+                                <option value="Passport">Passport</option>
+                                <option value="Driver's License">Driver's License</option>
+                                <option value="Aadhar Card">Aadhar Card</option>
+                                <option value="PAN Card">PAN Card</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="idNumber">ID Number</label>
+                            <input type="text" id="idNumber" class="form-control" maxlength="12" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="button" style="width: 100%;">Complete Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Booking Confirmation</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="booking-confirmation">
+                    <div class="confirmation-header">
+                        <h2>Thank you for your reservation!</h2>
+                        <p>Your booking has been confirmed. Please find your booking details below.</p>
+                    </div>
+                    
+                    <div class="booking-details">
+                        <div class="detail-section">
+                            <h3>Vehicle Details</h3>
+                            <div class="detail-row">
+                                <span class="detail-label">Vehicle:</span>
+                                <span class="detail-value" id="conf-vehicle"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Type:</span>
+                                <span class="detail-value" id="conf-type"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Rate:</span>
+                                <span class="detail-value" id="conf-rate"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Reservation Details</h3>
+                            <div class="detail-row">
+                                <span class="detail-label">Pickup Date:</span>
+                                <span class="detail-value" id="conf-pickup"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Return Date:</span>
+                                <span class="detail-value" id="conf-return"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value" id="conf-duration"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Booking ID:</span>
+                                <span class="detail-value" id="conf-booking-id"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Customer Information</h3>
+                            <div class="detail-row">
+                                <span class="detail-label">Name:</span>
+                                <span class="detail-value" id="conf-name"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Email:</span>
+                                <span class="detail-value" id="conf-email"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Phone:</span>
+                                <span class="detail-value" id="conf-phone"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">ID Type:</span>
+                                <span class="detail-value" id="conf-id-type"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">ID Number:</span>
+                                <span class="detail-value" id="conf-id-number"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="total-section">
+                        <div class="detail-row">
+                            <span class="detail-label">Subtotal:</span>
+                            <span class="detail-value" id="conf-subtotal"></span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Tax (18% GST):</span>
+                            <span class="detail-value" id="conf-tax"></span>
+                        </div>
+                        <div class="total-row">
+                            <span>Total Amount:</span>
+                            <span id="conf-total"></span>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button class="print-button" id="printButton">Print Confirmation</button>
+                        <button class="button" id="doneButton" style="margin-left: 15px;">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 RideSwap. All Rights Reserved. | Designed by SrikarMalla</p>
+    </footer>
+    
+    <script src="rent.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideSwap Booking</title>
+    <link rel="stylesheet" href="booking-form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Book Your Ride</h2>
+        <form id="bookingForm" class="no-print">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+                <div class="error" id="email-error">Please enter a valid email</div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required maxlength="10">
+                <div class="error" id="phone-error">Please enter 10-digit phone number</div>
+            </div>
+            <div class="form-group">
+                <label for="pickup">Pickup Location</label>
+                <input type="text" id="pickup" required>
+            </div>
+            <div class="form-group">
+                <label for="dropoff">Drop-off Location</label>
+                <input type="text" id="dropoff" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+                <div class="error" id="date-error">Please select today or future date</div>
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="duration-hours">Duration (Hours)</label>
+                <input type="number" id="duration-hours" min="1" max="9" value="1" required>
+            </div>
+            <div class="form-group">
+                <label for="duration-minutes">Duration (Minutes)</label>
+                <input type="number" id="duration-minutes" min="0" max="59" value="0" required>
+            </div>
+            <div class="form-group">
+                <label>Selected Vehicle:</label>
+                <div id="selected-vehicle-info" class="vehicle-info"></div>
+            </div>
+            <div class="form-group">
+                <label>Estimated Cost:</label>
+                <div id="estimated-cost" class="cost-info">₹0</div>
+            </div>
+            <div class="action-buttons">
+                <button type="button" class="back-button" onclick="window.history.back()">Back</button>
+                <button type="submit">Book Now</button>
+            </div>
+        </form>
+
+        <div id="confirmation" class="print-section" style="display: none;">
+            <h3>Booking Confirmation</h3>
+            <p><strong>Name:</strong> <span id="confirm-name"></span></p>
+            <p><strong>Email:</strong> <span id="confirm-email"></span></p>
+            <p><strong>Phone:</strong> <span id="confirm-phone"></span></p>
+            <p><strong>Pickup:</strong> <span id="confirm-pickup"></span></p>
+            <p><strong>Drop-off:</strong> <span id="confirm-dropoff"></span></p>
+            <p><strong>Date & Time:</strong> <span id="confirm-datetime"></span></p>
+            <p><strong>Duration:</strong> <span id="confirm-duration"></span></p>
+            <p><strong>Vehicle Type:</strong> <span id="confirm-vehicle"></span></p>
+            <p><strong>Hourly Rate:</strong> ₹<span id="confirm-rate"></span></p>
+            <p><strong>Total Cost:</strong> ₹<span id="confirm-cost"></span></p>
+            <div class="action-buttons no-print">
+                <button onclick="window.print()">Print Receipt</button>
+                <button class="home-button" onclick="window.location.href='home.html'">Back to Home</button>
+            </div>
+        </div>
+
+        <div class="receipt-animation" id="receiptAnimation" style="display: none;">
+            <div class="checkmark">✓</div>
+            <h3>Booking Confirmed!</h3>
+            <p>Your ride has been successfully booked</p>
+            <button class="home-button" onclick="hideAnimation()">View Details</button>
+        </div>
+    </div>
+
+    <script src="booking-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RideSwap - Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <h1>RideSwap</h1>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password (6-8 characters)</label>
+          <input 
+            type="password" 
+            id="loginPassword" 
+            required 
+            minlength="6" 
+            maxlength="8" 
+          />
+        </div>
+        <button type="submit">Sign In</button>
+        <div id="loginError" class="error"></div>
+      </form>
+
+      <form id="registerForm" class="hidden">
+        <div class="form-group">
+          <label for="regName">Full Name</label>
+          <input type="text" id="regName" required />
+        </div>
+        <div class="form-group">
+          <label for="regPhone">Phone Number (10 digits)</label>
+          <input
+            type="tel"
+            id="regPhone"
+            required
+            pattern="[0-9]{10}"
+            title="Please enter exactly 10 digits"
+            maxlength="10"
+          />
+        </div>
+        <div class="form-group">
+          <label for="regEmail">Email</label>
+          <input type="email" id="regEmail" required />
+        </div>
+        <div class="form-group">
+          <label for="regPassword">Password (6-8 characters)</label>
+          <input
+            type="password"
+            id="regPassword"
+            required
+            minlength="6"
+            maxlength="8"
+          />
+        </div>
+        <div class="form-group">
+          <label for="regConfirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="regConfirmPassword"
+            required
+            minlength="6"
+            maxlength="8"
+          />
+        </div>
+        <div class="form-group">
+          <label for="regPhoto">Profile Photo</label>
+          <input type="file" id="regPhoto" accept="image/*" />
+        </div>
+        <button type="submit">Register</button>
+        <div id="registerError" class="error"></div>
+      </form>
+      
+      <div class="form-toggle">
+        <span id="toggleText">Don't have an account? </span>
+        <a id="toggleLink">Register here</a>
+      </div>
+    </div>
+    
+    <script src="login.js"></script>
+  </body>
+</html>
