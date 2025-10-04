@@ -42,28 +42,19 @@ RideSwap is a modern, responsive web-based vehicle rental platform that allows u
 
 ## 📁 Project Structure
 
-
-RideSwap/
-├── index.html (login.html)     # Authentication page
-├── home.html                   # Main dashboard
-├── about.html                  # Company information
-├── booking.html                # Vehicle selection
-├── rent.html                   # Featured vehicles & booking
-├── contact.html                # Contact information
-├── styles/
-│   ├── login.css              # Authentication styles
-│   ├── home.css               # Dashboard styles
-│   ├── about.css              # About page styles
-│   ├── booking.css            # Booking page styles
-│   ├── rent.css               # Rental page styles
-│   └── contact.css            # Contact page styles
-├── scripts/
-│   ├── login.js               # Authentication logic
-│   ├── home.js                # Dashboard functionality
-│   ├── booking.js             # Vehicle selection logic
-│   ├── rent.js                # Booking and rental logic
-│   └── contact.js             # Contact form handling
-└── images/                    # Vehicle and profile images
+rideswap/
+├── login.html              # Entry point & authentication
+├── home.html               # Dashboard
+├── about.html              # Company info
+├── booking.html            # Vehicle selection
+├── rent.html               # Featured vehicles
+├── contact.html            # Contact form
+├── login.css/js            # Authentication
+├── home.css/js             # Dashboard logic
+├── booking.css/js          # Booking system
+├── rent.css/js             # Rental management
+├── contact.css/js          # Contact handling
+└── images/                 # Assets
 
 
 ## 🚀 Getting Started
