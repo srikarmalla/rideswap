@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Vehicle - RideSwap</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="home.html" class="logo">Ride<span>Swap</span></a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+   
+    <header class="page-header">
+        <div class="container">
+            <h1>Book Your Perfect Vehicle</h1>
+            <p>Choose from our extensive collection of vehicles for any occasion</p>
+        </div>
+    </header>
+
+    <section class="vehicle-selection" id="vehicleSelection">
+        <div class="container">
+            <h2 class="section-title">Select a Vehicle Type</h2>
+            <p class="section-subtitle">Click on a category to view available vehicles and proceed with booking</p>
+            
+            <div class="vehicle-categories">
+        
+                <div class="vehicle-category" onclick="selectVehicle('bike', 'Baja Bike', 50)">
+                    <div class="category-img" style="background-image: url('images/bike.jpeg');">
+                        <div class="category-label">Popular</div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Bajaj Bike</h3>
+                        <p>Comfortable and economical options for city travel</p>
+                        <div class="price">₹50/hour</div>
+                        <div class="button">Select</div>
+                    </div>
+                </div>
+               
+                <div class="vehicle-category" onclick="selectVehicle('mini-auto', 'Mini-Auto', 80)">
+                    <div class="category-img" style="background-image: url('images/ai-auto.jpeg');">
+                        <div class="category-label">Solo</div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Mini-Auto</h3>
+                        <p>Vehicles perfect for small trips</p>
+                        <div class="price">₹80/hour</div>
+                        <div class="button">Select</div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-category" onclick="selectVehicle('auto', 'Auto', 100)">
+                    <div class="category-img" style="background-image: url('images/auto.jpeg');">
+                        <div class="category-label">Family</div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Auto</h3>
+                        <p>Vehicles for comfortable ride</p>
+                        <div class="price">₹100/hour</div>
+                        <div class="button">Select</div>
+                    </div>
+                </div>
+
+                <div class="vehicle-category" onclick="selectVehicle('van', 'Van', 150)">
+                    <div class="category-img" style="background-image: url('images/van.jpg');">
+                        <div class="category-label">Utility</div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Van</h3>
+                        <p>Spacious vans for group travel, moving, or business logistics</p>
+                        <div class="price">₹150/hour</div>
+                        <div class="button">Select</div>
+                    </div>
+                </div>
+                
+                <div class="vehicle-category" onclick="selectVehicle('car', 'Car', 120)">
+                    <div class="category-img" style="background-image: url('images/car.jpeg');">
+                        <div class="category-label">Family</div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Car</h3>
+                        <p>Environmentally friendly options with modern features</p>
+                        <div class="price">₹120/hour</div>
+                        <div class="button">Select</div>
+                    </div>
+                </div>
+
+                <div class="vehicle-category" onclick="selectVehicle('luxury-car', 'Luxury Car', 300)">
+                    <div class="category-img" style="background-image: url('images/luxury.jpeg');">
+                        <div class="category-label">Luxury</div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Luxury Car</h3>
+                        <p>Stylish open-top vehicles for luxury drives and memorable experiences</p>
+                        <div class="price">₹300/hour</div>
+                        <div class="button">Select</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 RideSwap. All Rights Reserved. | Designed by NikhilReddy</p>
+        </div>
+    </footer>
+<script src="booking.js"></script>
+</body>
+</html>
